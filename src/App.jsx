@@ -16,6 +16,7 @@ import Founder from "./Sections/PricingSection";
 import Footer from "./Components/Footer";
 import MultiXender from "./Components/MultiXender";
 import Circle from "./Components/Circle";
+import CardComponent from "./Components/Cardss";
 
 
 const App = () => {
@@ -78,8 +79,8 @@ const AboutPage = () => {
       <Vision />
       <Circle/>
       <Founder />
-      {/* <button onClick={()=>setModal(true)}className="bg-violet-500 px-4 py-2 rounded-lg text-lg">click</button>
-      {showModel && <CardComponent/>} */}
+      <button onClick={()=>setModal(true)}className="bg-violet-500 px-4 py-2 rounded-lg text-lg">click</button>
+      {showModel && <CardComponent/>}
       <Footer />
       
      </>
