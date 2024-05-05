@@ -67,7 +67,79 @@ const CardStyled = styled.div`
             cursor: pointer;
             background: transparent;
             border-radius: 20px;
-            font-size: inherit;
+            font-size: inherit;import React, { useState } from "react";
+import carData from "../Data/CarData.json";
+import { X } from "lucide-react";
+
+const Card = ({ card, onCardClick }) => {
+  const handleCardClick = () => {
+    onCardClick(card);
+  };
+
+  return (
+    <div
+      style={{
+        border: "1px solid #ccc",
+        borderBottomWidth: "4px",
+        display: "flex",
+        alignItems: "center",
+        position: "relative", 
+      }}
+      onClick={handleCardClick} // Added for card click
+    >
+      <div style={{ padding: "10px" }}>
+        <img
+          src={card.image}
+          alt="Profile"
+          style={{ width: "100px", height: "auto" }}
+        />
+      </div>
+      <div style={{ flex: 1, padding: "10px" }}>
+        <div style={{ display: "flex", flexDirection: "column", gap: "5px" }}>
+          <h2 style={{ marginTop: 0, marginBottom: "5px" }}>{card.name}</h2>
+          <p style={{ marginBottom: "10px" }}>{card.description}</p>
+        </div>
+      </div>
+      <button
+        style={{
+          position: "absolute",
+          top: "10px",
+          right: "10px",
+          padding: "4px 8px",
+          backgroundColor: "#007bff",
+          color: "#fff",
+          border: "none",
+          borderRadius: "4px",
+        }}
+        onClick={(e) => {
+          e.stopPropagation(); 
+          onCardClick(null); 
+        }}
+      >
+        <X />
+      </button>
+    </div>
+  );
+};
+
+const CardComponent = () => {
+  const [selectedCard, setSelectedCard] = useState(false);
+
+  const handleCardClick = (card) => {
+    setSelectedCard(card);
+  };
+
+  return (
+    <div style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
+      {carData.map((card) => (
+        <Card key={card.id} card={card} onCardClick={handleCardClick} />
+      ))}
+    </div>
+  );
+};
+
+export default CardComponent;
+
             color: #16194F;
         }
     }

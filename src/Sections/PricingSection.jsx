@@ -3,7 +3,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Card from '../Components/Cards';
 import { InnerLayout } from '../styles/Layout';
-import CardComponent from '../Components/Cardss';
+
 // const [showModal, setShowModal] = useState(false);
 const PaymentSection = () => {
    return (

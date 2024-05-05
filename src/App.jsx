@@ -15,8 +15,8 @@ import Vision from "./Sections/MessagingSection";
 import Founder from "./Sections/PricingSection";
 import Footer from "./Components/Footer";
 import MultiXender from "./Components/MultiXender";
-import Circle from "./Components/Circle";
 import CardComponent from "./Components/Cardss";
+import CircleCardSection from "./Sections/CircleSection";
 
 
 const App = () => {
@@ -69,22 +69,28 @@ const App = () => {
 };
 
 const AboutPage = () => {
-  const [showModel, setModal]=useState(false)
+  const [showModal, setShowModal] = useState(false);
+
+  const handleCloseModal = () => {
+    setShowModal(false);
+  };
 
   return (
     <>
       <Navbar />
-      <Introduction /> 
-       <Mission />
+      <Introduction />
+      <Mission />
       <Vision />
-      <Circle/>
+      <CircleCardSection />
       <Founder />
-      <button onClick={()=>setModal(true)}className="bg-violet-500 px-4 py-2 rounded-lg text-lg">click</button>
-      {showModel && <CardComponent/>}
+      <button className="open-modal-button" onClick={() => setShowModal(true)}>
+        Click
+      </button>
+      {showModal && <CardComponent onClose={handleCloseModal} setShowModal={setShowModal} />} 
       <Footer />
-      
-     </>
+    </>
   );
 };
+
 
 export default App;

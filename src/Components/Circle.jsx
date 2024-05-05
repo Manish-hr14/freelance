@@ -5,6 +5,7 @@ const CircleCards = () => {
   return (
     <CircleContainer>
       <CircleCard>
+      <img src="https://i.postimg.cc/1R0ppF3g/lancer.png" alt="Image 1" />
         <h2>Card 1</h2>
         <p>This is some text for card 1.</p>
       </CircleCard>
@@ -31,25 +32,21 @@ const CircleCards = () => {
 const CircleContainer = styled.div`
   display: flex;
   gap: 20px;
-  justify-content: center; 
-  width: 100%; 
-  max-width: 100%; 
-  padding: 0; 
+  justify-content: center;
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
   position: relative;
-  flex-wrap: wrap; /* Allow items to wrap onto multiple lines */
-
-  @media (max-width: 768px) { 
-    flex-direction: column; /* Stack cards vertically on smaller screens */
-    align-items: center; /* Center the cards vertically */
-  }
+  flex-wrap: wrap;
 `;
 
 const CircleCard = styled.div`
-  width: 45vw; /* Wider on mobile */
+  width: 45vw;
   height: 45vw;
-  max-width: 250px; 
+  max-width: 250px;
   max-height: 250px;
   border-radius: 50%;
+  overflow: hidden; /* Ensure the image is clipped to the circle */
   background-color: #007bff;
   color: #fff;
   text-align: center;
@@ -58,21 +55,22 @@ const CircleCard = styled.div`
   justify-content: center;
   align-items: center;
   position: relative;
-  transition: transform 0.3s ease; 
-  margin-bottom: 20px; /* Add margin for spacing */
+  transition: transform 0.3s ease;
+  margin-bottom: 20px;
 
-  &:hover {
-    transform: scale(1.1); 
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Maintain aspect ratio and cover the circle */
+    border-radius: 50%; /* Apply circular shape to the image */
   }
 
-  ${props =>
-    props.center &&
-    `
-    width: 50vw; /* Slightly larger for the center card */
-    height: 50vw;
-  `}
+  &:hover {
+    transform: scale(1.1);
+  }
 
-  p, h2 {
+  p,
+  h2 {
     margin: 0;
     position: absolute;
     bottom: -70px;
@@ -80,11 +78,11 @@ const CircleCard = styled.div`
     transform: translateX(-50%);
     text-align: center;
     width: 100%;
-    padding: 10px; /* Ensure text is not overlapping the card edge */
+    padding: 10px;
   }
 
   @media (max-width: 768px) {
-    width: 90vw;  /* Adjust card width for even smaller screens */
+    width: 90vw;
     height: 90vw;
   }
 `;
