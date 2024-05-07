@@ -55,7 +55,7 @@
     position: absolute;
     height: 600px; 
     width: 80%; 
-    background-color: #454543;
+    background: radial-gradient(circle at -8.9% 51.2%, rgb(255, 0, 204) 0%, rgb(255, 124, 0) 15.9%, rgb(255, 0, 0) 15.9%, rgb(255, 163, 77) 24.4%, rgb(19, 30, 37) 24.5%, rgb(19, 30, 37) 66%);
     border-radius: 20px;
     opacity: 0; 
   }
