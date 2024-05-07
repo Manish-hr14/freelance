@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Routes,
   Route,
   Navigate,
-} from "react-router-dom";
+} from "react-router-dom"; // Change BrowserRouter to HashRouter
 import GradientBackground from "./Components/GradientBackground";
 import Navbar from "./Components/Navbar";
 import ActivateWithActivator from "./Components/Activator";
@@ -17,7 +17,7 @@ import Footer from "./Components/Footer";
 import MultiXender from "./Components/MultiXender";
 import CardComponent from "./Components/Cardss";
 import CircleCardSection from "./Sections/CircleSection";
-
+import Dapp from "./Components/Dapps";
 
 const App = () => {
   const handleClick = () => {
@@ -27,28 +27,8 @@ const App = () => {
   const Home = () => {
     return (
       <>
-        <Navbar/>
-        <div style={{ position: "relative", width: "100%", height: "100vh" }}>
-          <GradientBackground style={{ width: "100%", height: "100%" }} />
-          <div
-            style={{
-              position: "absolute",
-              top: "50%",
-              left: "50%",
-              transform: "translate(-50%, -50%)",
-              width: "100%",
-              textAlign: "center",
-            }}
-          >
-            <div style={{ marginBottom: "1rem" }}>
-              <MultiXender />
-            </div>
-            <div>
-              {/* Pass handleClick function to ActivateWithActivator component */}
-              <ActivateWithActivator onClick={handleClick} />
-            </div>
-          </div>
-        </div>
+        <Navbar />
+        <Dapp />
       </>
     );
   };
@@ -83,14 +63,18 @@ const AboutPage = () => {
       <Vision />
       <CircleCardSection />
       <Founder />
-      <button className="open-modal-button" onClick={() => setShowModal(true)}>
+      <button
+        className="open-modal-button"
+        onClick={() => setShowModal(true)}
+      >
         Click
       </button>
-      {showModal && <CardComponent onClose={handleCloseModal} setShowModal={setShowModal} />} 
+      {showModal && (
+        <CardComponent onClose={handleCloseModal} setShowModal={setShowModal} />
+      )}
       <Footer />
     </>
   );
 };
-
 
 export default App;
