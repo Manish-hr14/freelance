@@ -59,13 +59,13 @@ const CardComponent = ({ setShowModal }) => {
   return (
     <div style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
       {/* Render cards */}
-      {carData.map((card) => (
+      {/* {carData.map((card) => (
         <Card
           key={card.id}
           card={card}
           onClose={handleClose} // Pass handleClose function to Card component
         />
-      ))}
+      ))} */}
     </div>
   );
 };

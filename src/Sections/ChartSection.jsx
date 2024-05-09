@@ -1,7 +1,9 @@
 import React from "react";
+import Lottie from "lottie-react";
+import Rocket from "../assets/img/Rocket.json";
 import styled from "styled-components";
 import { InnerLayout } from "../styles/Layout";
-import chart from "../assets/img/rocket.gif";
+
 
 const ChartSection = () => {
   return (
@@ -9,7 +11,13 @@ const ChartSection = () => {
       <InnerLayout>
         <div className="chart-con">
           <div className="chart-left">
-            <img src={chart} alt="" />
+          <Lottie
+              style={{ width: 500, height: 500 }}
+              source={Rocket}
+              autoPlay
+              loop
+              animationData={Rocket}
+            />
           </div>
           <div className="chart-right">
             <h2 className="secondary-heading">Mission</h2>

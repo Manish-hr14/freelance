@@ -1,7 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import { InnerLayout } from "../styles/Layout";
-import Doorbean from "../assets/img/doorbean.svg";
+import Vision from "../assets/img/vision.json";
+import Lottie from "lottie-react";
 
 const MessagingSection = () => {
   return (
@@ -10,7 +11,7 @@ const MessagingSection = () => {
         <div className="message-con">
           <div className="left-items">
             <h2 className="secondary-heading">Vision</h2>
-            <p className="left-para" style={{ color: 'white' }}>
+            <p className="left-para" style={{ color: "white" }}>
               The Freelancers DAO aims to empower freelancers to contribute to
               the Web3 ecosystem meaningfully, enabling them to shape its
               future. It has three stages: Novice, Lancers, and Ambassadors.
@@ -21,7 +22,13 @@ const MessagingSection = () => {
             </p>
           </div>
           <div className="right-items">
-            <img src={Doorbean} alt="" />
+            <Lottie
+              style={{ width: 500, height: 500 }}
+              source={Vision}
+              autoPlay
+              loop
+              animationData={Vision}
+            />
           </div>
         </div>
       </InnerLayout>

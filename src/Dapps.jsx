@@ -1,6 +1,7 @@
+
 import React, { useEffect, useState } from "react";
-import "./Dapps.css"; // Import CSS for styling
-import Button from "./Button";
+import "./Components/Dapps.css"; // Import CSS for styling
+import Button from "./Components/Button";
 
 const Dapp = () => {
   const handleButtonClick = () => {
@@ -56,7 +57,7 @@ const Dapp = () => {
               <img
                 src="https://i.postimg.cc/sDhmk02p/Animated-Sticker1-ezgif-com-gif-maker.gif"
                 alt="Animated Sticker"
-                className="mx-auto w-32 sm:w-auto md:w-48"
+                className="mx-auto w-48 sm:w-48 md:w-48 lg:w-48 xl:w-48"
               />
             </div>
 
@@ -84,30 +85,30 @@ const Dapp = () => {
                   activatorVisible ? "visible" : ""
                 }`}
               >
-                  <div className="block6 flex justify-center items-center border rounded-md m-4">
-              <p className="text-black text-2xl md:text-8xl">
-                Activator
-              </p>
-            </div>
-            <div className="block7 bg-gray-200 border border-black rounded-md p-4 m-4 overflow-auto">
-              <p className="">
-              Activator is a decentralized app on Near Protocol that rewards users for active participation in the Near ecosystem. It uses a leaderboard to track users' contributions and boost community engagement.
-
-              </p>
-            </div>
-            <div className="block5 relative text-center bg-gray-200 border border-black rounded-md m-4 p-4">
-  <img
-    src="https://i.postimg.cc/SNgr0BWt/18505047-SL-070720-32260-21.png"
-    alt="Animated Sticker"
-    className="mx-auto w-96"
-  />
-</div>
+                <div className="block6 flex justify-center items-center border rounded-md m-4">
+                  <p className="text-black text-2xl md:text-8xl">Activator</p>
+                </div>
+                <div className="block7 bg-gray-200 border border-black rounded-md p-4 m-4 overflow-auto">
+                  <p className="">
+                    Activator is a decentralized app on Near Protocol that
+                    rewards users for active participation in the Near
+                    ecosystem. It uses a leaderboard to track users'
+                    contributions and boost community engagement.
+                  </p>
+                </div>
+                <div className="block5 relative text-center bg-gray-200 border border-black rounded-md m-4 p-4">
+                  <img
+                    src="https://i.postimg.cc/SNgr0BWt/18505047-SL-070720-32260-21.png"
+                    alt="Animated Sticker"
+                    className="mx-auto w-96"
+                  />
+                </div>
 
                 <div className="blockadd2">
-                <div className="flex justify-center mt-4">
-                <Button className="text-sm md:text-base">Click Here</Button>
-              </div> </div>
-                
+                  <div className="flex justify-center mt-4">
+                    <Button className="text-sm md:text-base">Click Here</Button>
+                  </div>{" "}
+                </div>
               </div>
             </div>
           </div>
@@ -118,6 +119,3 @@ const Dapp = () => {
 };
 
 export default Dapp;
-{/* <div className="flex justify-center mt-4">
-                <Button className="text-sm md:text-base">Click Here</Button>
-              </div> */}

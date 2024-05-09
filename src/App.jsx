@@ -17,7 +17,9 @@ import Footer from "./Components/Footer";
 import MultiXender from "./Components/MultiXender";
 import CardComponent from "./Components/Cardss";
 import CircleCardSection from "./Sections/CircleSection";
-import Dapp from "./Components/Dapps";
+import Dapp from "./Dapps";
+import Welcome from "./Sections/Welcome";
+import Laptop from "./Sections/Laptop";
 
 const App = () => {
   const handleClick = () => {
@@ -28,7 +30,33 @@ const App = () => {
     return (
       <>
         <Navbar />
-        <Dapp />
+        <div style={{ position: "relative", width: "100%", height: "100vh" }}>
+          <GradientBackground style={{ width: "100%", height: "100%" }} />
+          <div
+            style={{
+              position: "absolute",
+              top: "50%",
+              left: "50%",
+              transform: "translate(-50%, -50%)",
+              width: "100%",
+              textAlign: "center",
+            }}
+          >
+            <div >
+              {/* <MultiXender /> */}
+              <Laptop/>
+              
+              {/* <Welcome/> */}
+             
+            </div>
+            <div>
+              {/* Pass handleClick function to ActivateWithActivator component */}
+              {/* <ActivateWithActivator onClick={handleClick} /> */}
+            </div>
+          </div>
+          
+        </div>
+        <Dapp/>
       </>
     );
   };
@@ -49,12 +77,6 @@ const App = () => {
 };
 
 const AboutPage = () => {
-  const [showModal, setShowModal] = useState(false);
-
-  const handleCloseModal = () => {
-    setShowModal(false);
-  };
-
   return (
     <>
       <Navbar />
@@ -63,16 +85,9 @@ const AboutPage = () => {
       <Vision />
       <CircleCardSection />
       <Founder />
-      <button
-        className="open-modal-button"
-        onClick={() => setShowModal(true)}
-      >
-        Click
-      </button>
-      {showModal && (
-        <CardComponent onClose={handleCloseModal} setShowModal={setShowModal} />
-      )}
       <Footer />
+    
+      
     </>
   );
 };
