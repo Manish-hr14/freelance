@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import laptopImage from '../assets/img/laptop.png'; // Import the image file
-import fdao from '../assets/img/fdao.mp4';
+import fdao from '../assets/img/fdaoo.mp4';
 import AOS from "aos";
 import "aos/dist/aos.css"; // Import AOS CSS
 
