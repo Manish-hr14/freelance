@@ -1,10 +1,8 @@
 import React from "react";
-import carData from "../Data/CarData.json";
-import { X } from "lucide-react";
 
-const Card = ({ card, onClose }) => {
+
+const Card = ({ card }) => {
   const handleCardClick = () => {
-    // Handle card click action here if needed
   };
 
   return (
@@ -31,43 +29,15 @@ const Card = ({ card, onClose }) => {
           <p style={{ marginBottom: "10px" }}>{card.description}</p>
         </div>
       </div>
-      {/* Close button (X) */}
-      <button
-        style={{
-          position: "absolute",
-          top: "10px",
-          right: "10px",
-          padding: "4px 8px",
-          backgroundColor: "#007bff",
-          color: "#fff",
-          border: "none",
-          borderRadius: "4px",
-        }}
-        onClick={onClose} // Call onClose function when close button is clicked
-      >
-        <X />
-      </button>
     </div>
   );
 };
 
-const CardComponent = ({ setShowModal }) => {
-  const handleClose = () => {
-    setShowModal(false); // Close the modal
-  };
-
+const CardComponent = () => {
   return (
-    <div style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
-      {/* Render cards */}
-      {/* {carData.map((card) => (
-        <Card
-          key={card.id}
-          card={card}
-          onClose={handleClose} // Pass handleClose function to Card component
-        />
-      ))} */}
+    <div>
     </div>
   );
-};
+}
 
 export default CardComponent;

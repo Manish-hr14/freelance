@@ -5,7 +5,7 @@ const CircleCards = () => {
   return (
     <CircleContainer>
       <CircleCard>
-      <img src="https://i.postimg.cc/1R0ppF3g/lancer.png" alt="Image 1" />
+        <img src="https://i.postimg.cc/1R0ppF3g/lancer.png" alt="Image 1" />
         <h2>Card 1</h2>
         <p>This is some text for card 1.</p>
       </CircleCard>
@@ -33,20 +33,20 @@ const CircleContainer = styled.div`
   display: flex;
   gap: 20px;
   justify-content: center;
+  align-items: center;
   width: 100%;
   max-width: 100%;
   padding: 0;
-  position: relative;
   flex-wrap: wrap;
 `;
 
 const CircleCard = styled.div`
-  width: 45vw;
-  height: 45vw;
-  max-width: 250px;
-  max-height: 250px;
+  width: ${({ center }) => (center ? '60vw' : '45vw')};
+  height: ${({ center }) => (center ? '60vw' : '45vw')};
+  max-width: ${({ center }) => (center ? '300px' : '250px')};
+  max-height: ${({ center }) => (center ? '300px' : '250px')};
   border-radius: 50%;
-  overflow: hidden; /* Ensure the image is clipped to the circle */
+  overflow: hidden;
   background-color: #007bff;
   color: #fff;
   text-align: center;
@@ -61,8 +61,8 @@ const CircleCard = styled.div`
   img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Maintain aspect ratio and cover the circle */
-    border-radius: 50%; /* Apply circular shape to the image */
+    object-fit: cover;
+    border-radius: 50%;
   }
 
   &:hover {

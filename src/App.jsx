@@ -18,7 +18,7 @@ import MultiXender from "./Components/MultiXender";
 import CardComponent from "./Components/Cardss";
 import CircleCardSection from "./Sections/CircleSection";
 import Dapp from "./Dapps";
-import Welcome from "./Sections/Welcome";
+
 import Laptop from "./Sections/Laptop";
 
 const App = () => {
@@ -86,8 +86,6 @@ const AboutPage = () => {
       <CircleCardSection />
       <Founder />
       <Footer />
-    
-      
     </>
   );
 };
