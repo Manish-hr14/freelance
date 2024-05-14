@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import laptopImage from '../assets/img/laptop.png'; // Import the image file
-import fdao from '../assets/img/fdaoo.mp4';
+import fdao from '../assets/img/fdao_logo.jpg';
 import AOS from "aos";
 import "aos/dist/aos.css"; // Import AOS CSS
 
@@ -20,7 +20,7 @@ const Laptop = () => {
         left: '50%',
         transform: 'translate(-50%, -50%)',
         maxWidth: '72%',
-        maxHeight: '100%',
+        maxHeight: '80%',
         width: 'auto',
         height: 'auto'
     };
@@ -29,12 +29,7 @@ const Laptop = () => {
         <div id="main">
             <div style={laptopContainerStyle}>
                 <img src={laptopImage} className="img-fluid" alt="Laptop" />
-                <video src={fdao} controls style={videoOverlayStyle}></video>
-            </div>
-            <div className="row">
-                <div className="col-12 text-white ">
-                    <p className="heading">We help create better products </p>
-                </div>
+                <img src={fdao} controls style={videoOverlayStyle}></img>
             </div>
         </div>
     );

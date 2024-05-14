@@ -1,29 +1,134 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 const CircleCards = () => {
   return (
     <CircleContainer>
       <CircleCard>
-        <img src="https://i.postimg.cc/1R0ppF3g/lancer.png" alt="Image 1" />
-        <h2>Card 1</h2>
-        <p>This is some text for card 1.</p>
+        <CircleContent>
+          <ImageContainer>
+            <img src="https://i.postimg.cc/1R0ppF3g/lancer.png" alt="Image 1" />
+          </ImageContainer>
+        </CircleContent>
+        <HelloText>Council</HelloText>
+        <HelloText>Council</HelloText>
+        <FlexContainer>
+          <a href="https://twitter.com/" target="_blank">
+            <img
+              src="https://i.postimg.cc/ZnCghHHh/64cebc6c19c2fe31de94c78e-X-vector-logo-download.png"
+              alt="Twitter Logo"
+              style={{ width: "30px", height: "30px" }}
+            />
+          </a>
+          <a href="https://twitter.com/" target="_blank">
+            <img
+              src="https://i.postimg.cc/ZnCghHHh/64cebc6c19c2fe31de94c78e-X-vector-logo-download.png"
+              alt="Twitter Logo"
+              style={{ width: "30px", height: "30px" }}
+            />
+          </a>
+        </FlexContainer>
       </CircleCard>
       <CircleCard>
-        <h2>Card 2</h2>
-        <p>This is some text for card 2.</p>
+        <CircleContent>
+          <ImageContainer>
+            <img src="https://i.postimg.cc/1R0ppF3g/lancer.png" alt="Image 1" />
+          </ImageContainer>
+        </CircleContent>
+        <HelloText>Council</HelloText>
+        <HelloText>Council</HelloText>
+        <FlexContainer>
+          <a href="https://twitter.com/" target="_blank">
+            <img
+              src="https://i.postimg.cc/ZnCghHHh/64cebc6c19c2fe31de94c78e-X-vector-logo-download.png"
+              alt="Twitter Logo"
+              style={{ width: "30px", height: "30px" }}
+            />
+          </a>
+          <a href="https://twitter.com/" target="_blank">
+            <img
+              src="https://i.postimg.cc/ZnCghHHh/64cebc6c19c2fe31de94c78e-X-vector-logo-download.png"
+              alt="Twitter Logo"
+              style={{ width: "30px", height: "30px" }}
+            />
+          </a>
+        </FlexContainer>
       </CircleCard>
       <CircleCard center>
-        <h2>Card 3</h2>
-        <p>This is some text for card 3.</p>
+        <CircleContent center>
+          <ImageContainer>
+            <img src="https://i.postimg.cc/1R0ppF3g/lancer.png" alt="Image 1" />
+          </ImageContainer>
+        </CircleContent>
+        <HelloText>Founder</HelloText>
+        <HelloText>Council</HelloText>
+        <FlexContainer>
+          <a href="https://twitter.com/" target="_blank">
+            <img
+              src="https://i.postimg.cc/ZnCghHHh/64cebc6c19c2fe31de94c78e-X-vector-logo-download.png"
+              alt="Twitter Logo"
+              style={{ width: "30px", height: "30px" }}
+            />
+          </a>
+          <a href="https://twitter.com/" target="_blank">
+            <img
+              src="https://i.postimg.cc/ZnCghHHh/64cebc6c19c2fe31de94c78e-X-vector-logo-download.png"
+              alt="Twitter Logo"
+              style={{ width: "30px", height: "30px" }}
+            />
+          </a>
+        </FlexContainer>
+      </CircleCard>
+
+      <CircleCard>
+        <CircleContent>
+          <ImageContainer>
+            <img src="https://i.postimg.cc/1R0ppF3g/lancer.png" alt="Image 1" />
+          </ImageContainer>
+        </CircleContent>
+        <HelloText>Council</HelloText>
+        <HelloText>Council</HelloText>
+        <FlexContainer>
+          <a href="https://twitter.com/" target="_blank">
+            <img
+              src="https://i.postimg.cc/ZnCghHHh/64cebc6c19c2fe31de94c78e-X-vector-logo-download.png"
+              alt="Twitter Logo"
+              style={{ width: "30px", height: "30px" }}
+            />
+          </a>
+          <a href="https://twitter.com/" target="_blank">
+            <img
+              src="https://i.postimg.cc/ZnCghHHh/64cebc6c19c2fe31de94c78e-X-vector-logo-download.png"
+              alt="Twitter Logo"
+              style={{ width: "30px", height: "30px" }}
+            />
+          </a>
+        </FlexContainer>
       </CircleCard>
       <CircleCard>
-        <h2>Card 4</h2>
-        <p>This is some text for card 4.</p>
-      </CircleCard>
-      <CircleCard>
-        <h2>Card 5</h2>
-        <p>This is some text for card 5.</p>
+        <CircleContent>
+          <ImageContainer>
+            <img src="https://i.postimg.cc/1R0ppF3g/lancer.png" alt="Image 1" />
+          </ImageContainer>
+        </CircleContent>
+        <HelloText>Council</HelloText>
+        <HelloText>Council</HelloText>
+        <FlexContainer>
+          <a href="https://twitter.com/" target="_blank">
+            <img
+              src="https://i.postimg.cc/ZnCghHHh/64cebc6c19c2fe31de94c78e-X-vector-logo-download.png"
+              alt="Twitter Logo"
+              style={{ width: "30px", height: "30px" }}
+            />
+          </a>
+          <a href="https://twitter.com/" target="_blank">
+            <img
+              src="https://i.postimg.cc/ZnCghHHh/64cebc6c19c2fe31de94c78e-X-vector-logo-download.png"
+              alt="Twitter Logo"
+              style={{ width: "30px", height: "30px" }}
+            />
+          </a>
+        </FlexContainer>
       </CircleCard>
     </CircleContainer>
   );
@@ -41,10 +146,20 @@ const CircleContainer = styled.div`
 `;
 
 const CircleCard = styled.div`
-  width: ${({ center }) => (center ? '60vw' : '45vw')};
-  height: ${({ center }) => (center ? '60vw' : '45vw')};
-  max-width: ${({ center }) => (center ? '300px' : '250px')};
-  max-height: ${({ center }) => (center ? '300px' : '250px')};
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+`;
+
+const FlexContainer = styled.div`
+  display: flex;
+  gap: 10px; /* Adjust spacing between images */
+`;
+
+const CircleContent = styled.div`
+  width: ${({ center }) => (center ? "300px" : "250px")};
+  height: ${({ center }) => (center ? "300px" : "250px")};
   border-radius: 50%;
   overflow: hidden;
   background-color: #007bff;
@@ -56,35 +171,40 @@ const CircleCard = styled.div`
   align-items: center;
   position: relative;
   transition: transform 0.3s ease;
-  margin-bottom: 20px;
 
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 50%;
+  @media (max-width: 768px) {
+    width: ${({ center }) => (center ? "300px" : "200px")};
+    height: ${({ center }) => (center ? "300px" : "200px")};
   }
 
   &:hover {
     transform: scale(1.1);
   }
+`;
 
-  p,
-  h2 {
-    margin: 0;
-    position: absolute;
-    bottom: -70px;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
+const ImageContainer = styled.div`
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+
+  img {
     width: 100%;
-    padding: 10px;
+    height: 100%;
+    object-fit: cover;
   }
+`;
 
-  @media (max-width: 768px) {
-    width: 90vw;
-    height: 90vw;
-  }
+const CircleText = styled.p`
+  margin: 0;
+  z-index: 1;
+  position: absolute;
+  bottom: 10px;
+`;
+
+const HelloText = styled.p`
+  font-weight: bold;
+  margin-top: 10px;
 `;
 
 export default CircleCards;

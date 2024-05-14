@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Card from "../Components/Cards";
 import { InnerLayout } from "../styles/Layout";
 import fetchData from "../card2";
-import { X } from 'lucide-react';
+
 
 const Ambassador_data = fetchData("https://api.npoint.io/267bb593da720507ccc2");
 const Novice_data = fetchData("https://api.npoint.io/75b6a8b494ff3972c379");
