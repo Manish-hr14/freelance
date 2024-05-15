@@ -11,19 +11,19 @@ const CircleCards = () => {
           </ImageContainer>
         </CircleContent>
         <HelloText>Council</HelloText>
-        <HelloText>Council</HelloText>
+        <HelloText>The King </HelloText>
         <FlexContainer>
-          <a href="https://twitter.com/" target="_blank">
+          <a href="https://twitter.com/1504_king?s=21" target="_blank">
             <img
               src="https://i.postimg.cc/ZnCghHHh/64cebc6c19c2fe31de94c78e-X-vector-logo-download.png"
               alt="Twitter Logo"
               style={{ width: "30px", height: "30px" }}
             />
           </a>
-          <a href="https://twitter.com/" target="_blank">
+          <a href="https://near.social/mob.near/widget/ProfilePage?accountId=1504king.near" target="_blank">
             <img
-              src="https://i.postimg.cc/ZnCghHHh/64cebc6c19c2fe31de94c78e-X-vector-logo-download.png"
-              alt="Twitter Logo"
+              src="https://i.postimg.cc/vTk5pZ1z/Screenshot-2024-05-09-005531.png"
+              alt="near social logo"
               style={{ width: "30px", height: "30px" }}
             />
           </a>
@@ -36,19 +36,19 @@ const CircleCards = () => {
           </ImageContainer>
         </CircleContent>
         <HelloText>Council</HelloText>
-        <HelloText>Council</HelloText>
+        <HelloText>Alphaflexhub</HelloText>
         <FlexContainer>
-          <a href="https://twitter.com/" target="_blank">
+          <a href=" https://x.com/alphaflexhub" target="_blank">
             <img
               src="https://i.postimg.cc/ZnCghHHh/64cebc6c19c2fe31de94c78e-X-vector-logo-download.png"
               alt="Twitter Logo"
               style={{ width: "30px", height: "30px" }}
             />
           </a>
-          <a href="https://twitter.com/" target="_blank">
+          <a href="https://near.social/mob.near/widget/ProfilePage?accountId=alphaflexhub.near" target="_blank">
             <img
-              src="https://i.postimg.cc/ZnCghHHh/64cebc6c19c2fe31de94c78e-X-vector-logo-download.png"
-              alt="Twitter Logo"
+              src="https://i.postimg.cc/vTk5pZ1z/Screenshot-2024-05-09-005531.png"
+              alt="near social logo"
               style={{ width: "30px", height: "30px" }}
             />
           </a>
@@ -63,17 +63,17 @@ const CircleCards = () => {
         <HelloText>Founder</HelloText>
         <HelloText>Council</HelloText>
         <FlexContainer>
-          <a href="https://twitter.com/" target="_blank">
+          <a href="https://x.com/crypto_psalm/" target="_blank">
             <img
               src="https://i.postimg.cc/ZnCghHHh/64cebc6c19c2fe31de94c78e-X-vector-logo-download.png"
               alt="Twitter Logo"
               style={{ width: "30px", height: "30px" }}
             />
           </a>
-          <a href="https://twitter.com/" target="_blank">
+          <a href="https://near.social/mob.near/widget/ProfilePage?accountId=psalm.near" target="_blank">
             <img
-              src="https://i.postimg.cc/ZnCghHHh/64cebc6c19c2fe31de94c78e-X-vector-logo-download.png"
-              alt="Twitter Logo"
+              src="https://i.postimg.cc/vTk5pZ1z/Screenshot-2024-05-09-005531.png"
+              alt="Nearsocial Logo"
               style={{ width: "30px", height: "30px" }}
             />
           </a>
@@ -87,19 +87,19 @@ const CircleCards = () => {
           </ImageContainer>
         </CircleContent>
         <HelloText>Council</HelloText>
-        <HelloText>Council</HelloText>
+        <HelloText>Ankit</HelloText>
         <FlexContainer>
-          <a href="https://twitter.com/" target="_blank">
+          <a href="https://twitter.com/OP_SoniAnkit?t=sNWWZBNuCOKm0xBy2AzBgQ&s=09" target="_blank">
             <img
               src="https://i.postimg.cc/ZnCghHHh/64cebc6c19c2fe31de94c78e-X-vector-logo-download.png"
               alt="Twitter Logo"
               style={{ width: "30px", height: "30px" }}
             />
           </a>
-          <a href="https://twitter.com/" target="_blank">
+          <a href="https://near.org/near/widget/ProfilePage?accountId=flame1.near" target="_blank">
             <img
-              src="https://i.postimg.cc/ZnCghHHh/64cebc6c19c2fe31de94c78e-X-vector-logo-download.png"
-              alt="Twitter Logo"
+              src="https://i.postimg.cc/vTk5pZ1z/Screenshot-2024-05-09-005531.png"
+              alt="near social logo"
               style={{ width: "30px", height: "30px" }}
             />
           </a>
@@ -112,19 +112,19 @@ const CircleCards = () => {
           </ImageContainer>
         </CircleContent>
         <HelloText>Council</HelloText>
-        <HelloText>Council</HelloText>
+        <HelloText>Dammy</HelloText>
         <FlexContainer>
-          <a href="https://twitter.com/" target="_blank">
+          <a href=" https://twitter.com/DrDamAlways" target="_blank">
             <img
               src="https://i.postimg.cc/ZnCghHHh/64cebc6c19c2fe31de94c78e-X-vector-logo-download.png"
               alt="Twitter Logo"
               style={{ width: "30px", height: "30px" }}
             />
           </a>
-          <a href="https://twitter.com/" target="_blank">
+          <a href="https://near.social/mob.near/widget/ProfilePage?accountId=damboy22.near" target="_blank">
             <img
-              src="https://i.postimg.cc/ZnCghHHh/64cebc6c19c2fe31de94c78e-X-vector-logo-download.png"
-              alt="Twitter Logo"
+              src="https://i.postimg.cc/vTk5pZ1z/Screenshot-2024-05-09-005531.png"
+              alt="near social logo"
               style={{ width: "30px", height: "30px" }}
             />
           </a>
@@ -204,6 +204,8 @@ const CircleText = styled.p`
 
 const HelloText = styled.p`
   font-weight: bold;
+  font-size: 26px;
+  color: white;
   margin-top: 10px;
 `;
 

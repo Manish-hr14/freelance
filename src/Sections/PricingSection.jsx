@@ -89,7 +89,7 @@ const PaymentSection = () => {
                   <report_container className="report">
                     <a
                       className="report"
-                      href={card.button3Link}
+                      href={card.report}
                       style={{
                         gridColumn: "2",
                         gridRow: "3",
@@ -105,13 +105,13 @@ const PaymentSection = () => {
                   </report_container>
 
                   <div className="links-container">
-                    <a style={{ marginLeft: "0px" }} href={card.button1Link}>
+                    <a style={{ marginLeft: "0px" }} href={card.twitter}>
                       <img
                         src="https://i.postimg.cc/ZnCghHHh/64cebc6c19c2fe31de94c78e-X-vector-logo-download.png"
                         alt="twitter logo"
                       />
                     </a>
-                    <a href={card.button2Link}>
+                    <a href={card.nearsocial}>
                       <img
                         src="https://i.postimg.cc/vTk5pZ1z/Screenshot-2024-05-09-005531.png"
                         alt="near social logo"
