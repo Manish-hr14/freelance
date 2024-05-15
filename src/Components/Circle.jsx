@@ -7,11 +7,11 @@ const CircleCards = () => {
       <CircleCard>
         <CircleContent>
           <ImageContainer>
-            <img src="https://i.postimg.cc/1R0ppF3g/lancer.png" alt="Image 1" />
+            <img src="https://i.postimg.cc/520dMBNm/photo-5918049795690316043-y.jpg" alt="Image 1" />
           </ImageContainer>
         </CircleContent>
-        <HelloText>Council</HelloText>
         <HelloText>The King </HelloText>
+        <HelloText>Role: Community Manager</HelloText>
         <FlexContainer>
           <a href="https://twitter.com/1504_king?s=21" target="_blank">
             <img
@@ -32,11 +32,12 @@ const CircleCards = () => {
       <CircleCard>
         <CircleContent>
           <ImageContainer>
-            <img src="https://i.postimg.cc/1R0ppF3g/lancer.png" alt="Image 1" />
+            <img src="https://i.postimg.cc/vZzLFKZ4/photo-5918049795690316044-y.jpg" alt="Image 1" />
           </ImageContainer>
         </CircleContent>
-        <HelloText>Council</HelloText>
+        
         <HelloText>Alphaflexhub</HelloText>
+        <HelloText>Role: Data and Information Tech</HelloText>
         <FlexContainer>
           <a href=" https://x.com/alphaflexhub" target="_blank">
             <img
@@ -57,11 +58,11 @@ const CircleCards = () => {
       <CircleCard center>
         <CircleContent center>
           <ImageContainer>
-            <img src="https://i.postimg.cc/1R0ppF3g/lancer.png" alt="Image 1" />
+            <img src="https://i.postimg.cc/wjp8b116/photo-5918049795690316045-y.jpg" alt="Image 1" />
           </ImageContainer>
         </CircleContent>
-        <HelloText>Founder</HelloText>
-        <HelloText>Council</HelloText>
+        <HelloText>Boma Samuel</HelloText>
+        <HelloText>Role: Chief Executive & Ops Lead </HelloText>
         <FlexContainer>
           <a href="https://x.com/crypto_psalm/" target="_blank">
             <img
@@ -83,11 +84,12 @@ const CircleCards = () => {
       <CircleCard>
         <CircleContent>
           <ImageContainer>
-            <img src="https://i.postimg.cc/1R0ppF3g/lancer.png" alt="Image 1" />
+            <img src="https://i.postimg.cc/RZVGFm87/photo-5918049795690316046-y.jpg" alt="Image 1" />
           </ImageContainer>
         </CircleContent>
-        <HelloText>Council</HelloText>
+       
         <HelloText>Ankit</HelloText>
+        <HelloText>Role: Coordinator & Marketing Managment </HelloText>
         <FlexContainer>
           <a href="https://twitter.com/OP_SoniAnkit?t=sNWWZBNuCOKm0xBy2AzBgQ&s=09" target="_blank">
             <img
@@ -108,11 +110,12 @@ const CircleCards = () => {
       <CircleCard>
         <CircleContent>
           <ImageContainer>
-            <img src="https://i.postimg.cc/1R0ppF3g/lancer.png" alt="Image 1" />
+            <img src="https://i.postimg.cc/tC5QwXWW/photo-5918005523167429431-y.jpg" alt="Image 1" />
           </ImageContainer>
         </CircleContent>
-        <HelloText>Council</HelloText>
+        
         <HelloText>Dammy</HelloText>
+        <HelloText>Role: Collabs & Partnership Manager</HelloText>
         <FlexContainer>
           <a href=" https://twitter.com/DrDamAlways" target="_blank">
             <img
@@ -204,9 +207,9 @@ const CircleText = styled.p`
 
 const HelloText = styled.p`
   font-weight: bold;
-  font-size: 26px;
+  font-size: 14px;
   color: white;
-  margin-top: 10px;
+  margin-top: 5px;
 `;
 
 export default CircleCards;

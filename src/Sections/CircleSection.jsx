@@ -1,13 +1,18 @@
 import React from "react";
 import styled from "styled-components";
 import { InnerLayout } from "../styles/Layout";
-
+import aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 // Import CircleCard component
 import CircleCard from "../Components/Circle";
 
 const CircleCardSection = () => {
+  useEffect(() => {
+    aos.init();
+  }, []);
   return (
-    <CircleCardStyled id="circle-card-section">
+    <CircleCardStyled id="circle-card-section"data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease-in-out">
       <InnerLayout>
         <div>
           <h3
@@ -15,7 +20,7 @@ const CircleCardSection = () => {
             style={{ color: "white", marginBottom: "2rem" }}
           >
             <div style={{ color: "white", fontWeight: "bold" }}>
-              Meet our Team
+            Council
             </div>
           </h3>
           {/* Render CircleCard component */}

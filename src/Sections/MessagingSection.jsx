@@ -3,12 +3,18 @@ import styled from "styled-components";
 import { InnerLayout } from "../styles/Layout";
 import Vision from "../assets/img/vision.json";
 import Lottie from "lottie-react";
+import aos from "aos";
+import "aos/dist/aos.css";
+import{useEffect} from "react";
 
 const MessagingSection = () => {
+   useEffect(() => {
+      aos.init();
+   }, []);
   return (
     <MessageStyle>
       <InnerLayout>
-        <div className="message-con">
+        <div className="message-con"data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-out">
           <div className="left-items">
             <h2 className="secondary-heading">Vision</h2>
             <p className="left-para" style={{ color: "white" }}>
@@ -77,6 +83,8 @@ const MessageStyle = styled.section`
 
    .secondary-heading {
       margin-left: 32px; /* Apply style only to the secondary-heading */
+      color: white;
+      font-weight: bold;
    }
    .left-para {
       margin-left: 32px; /* Apply style only to the secondary-heading */

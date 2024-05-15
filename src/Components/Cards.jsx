@@ -23,8 +23,8 @@ function Card({
             <h4 className="card-title">
                {amount} <span></span>
             </h4>
-            <p className="c-para">{text}</p>
-            <div className="button-con">
+            <p className="c-para" style={{ color: '#e1e2e1' }} >{text}</p>
+            <div className="button-con" style={{ color: 'white' }}>
                <button onClick={handleButtonClick}>{button}</button>
             </div>
          </CardStyled>
@@ -47,7 +47,7 @@ const CardStyled = styled.div`
 
     .card-title {
         font-size: 1.7rem;
-        color: #000;
+        color: white;
         text-align: center;
         padding: 1.5rem 0;
 
@@ -65,7 +65,7 @@ const CardStyled = styled.div`
             padding: .6rem 1.5rem;
             outline: none;
             cursor: pointer;
-            background: transparent;
+            background: white;
             border-radius: 20px;
             font-size: inherit;import React, { useState } from "react";
 import carData from "../Data/CarData.json";

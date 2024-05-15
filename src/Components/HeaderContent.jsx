@@ -12,10 +12,10 @@ const HeaderContent = () => {
 
   return (
     <HeaderContentStyled>
-      <div className="left-content">
+      <div className="left-content"data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-out">
         <div className="left-text-container">
-          <h1>Introduction</h1>
-          <p className="white"data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-out">
+          <h1>INTRODUCTION</h1>
+          <p className="white">
             {" "}
             {/* Add AOS attributes */}
             The Freelancers DAO utilises marketing strategies to engage
@@ -59,7 +59,12 @@ const HeaderContentStyled = styled.div`
       font-size: 4rem;
       font-weight: 600;
       @media screen and (max-width: 700px) {
-        font-size: 3rem;
+        font-size: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+  
+        
       }
     }
     .white {
@@ -71,6 +76,8 @@ const HeaderContentStyled = styled.div`
     position: relative;
     display: flex;
     justify-content: center;
+    @media screen and (max-width: 700px) {
+      justify-content: flex-start;
 
     .phone {
       width: 80%;
@@ -102,31 +109,6 @@ const HeaderContentStyled = styled.div`
     }
   }
 
-  //Header Animations
-  .message1 {
-    @keyframes move {
-      0% {
-        transform: translateY(0) rotate(0) scale(1) translateX(0);
-      }
-      50% {
-        transform: translateY(-10px) rotate(20deg) scale(1.1) translateX(10px);
-      }
-      100% {
-        transform: translateY(0) rotate(0deg) scale(1) translateX(0);
-      }
-    }
-    @keyframes move2 {
-      0% {
-        transform: translateY(0) rotate(0) scale(1) translateX(0);
-      }
-      50% {
-        transform: translateY(-10px) rotate(60deg) scale(1.1) translateX(10px);
-      }
-      100% {
-        transform: translateY(0) rotate(0deg) scale(1) translateX(0);
-      }
-    }
-  }
+  
 `;
-
 export default HeaderContent;

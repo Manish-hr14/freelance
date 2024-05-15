@@ -3,6 +3,9 @@ import styled from "styled-components";
 import Card from "../Components/Cards";
 import { InnerLayout } from "../styles/Layout";
 import fetchData from "../card2";
+import { useEffect } from "react";
+import aos from "aos";
+import "aos/dist/aos.css";
 
 
 const Ambassador_data = fetchData("https://api.npoint.io/267bb593da720507ccc2");
@@ -10,6 +13,7 @@ const Novice_data = fetchData("https://api.npoint.io/75b6a8b494ff3972c379");
 const Lancer_data = fetchData("https://api.npoint.io/149724ca7e1c2903133a");
 
 const PaymentSection = () => {
+  
   const [showModal, setShowModal] = useState(false);
   const [selectedCardData, setSelectedCardData] = useState(null);
 
@@ -33,28 +37,30 @@ const PaymentSection = () => {
   const closeModal = () => {
     setShowModal(false);
   };
-
+useEffect(() => {
+  aos.init();
+}, []);
   return (
-    <PaymentStyled id="pricing">
+    <PaymentStyled id="pricing"data-aos="zoom-out" data-aos-duration="1000" data-aos-easing="ease-in-out">
       <InnerLayout>
         <div>
           <h3 className="small-heading" style={{ color: "white" }}>
-            An exceptional service, <span>at the right price</span>
+         <strong>Engagers</strong>
           </h3>
         </div>
         <div className="card-con">
           <CardWrapper onClick={() => openModal("novice")}>
             <Card
               account={"Novice"} 
-              text={"Manage your business with a simple and efficient account."}
+              text={"Engage with DApps, meet 10k Twitter impressions, active on NDC and Freelancers channels, possess FDAO thug NFT."}
               imgSrc={"https://i.postimg.cc/sxhnxH5H/nft.png"}
               button={"Get Started"}
             />
           </CardWrapper>
           <CardWrapper onClick={() => openModal("lancer")}>
             <Card
-              account={"Lancer"}
-              text={"Manage your business with a simple and efficient account."}
+              account={"Lancer" } 
+              text={"Represent Near/NDC on MetaVerse, Twitter space, Zoom. Post about NDC on Near Social, aim for 50k impressions. Own Ambassador FDAO NFT.."}
               imgSrc={"https://i.postimg.cc/1R0ppF3g/lancer.png"}
               backgroundColor={"#212235"}
               button={"Get Started"}
