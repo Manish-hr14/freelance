@@ -1,10 +1,5 @@
 import React, { useState } from "react";
-import {
-  HashRouter as Router,
-  Routes,
-  Route,
-  Navigate,
-} from "react-router-dom"; // Change BrowserRouter to HashRouter
+import { HashRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import GradientBackground from "./Components/GradientBackground";
 import Navbar from "./Components/Navbar";
 import ActivateWithActivator from "./Components/Activator";
